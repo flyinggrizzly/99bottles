@@ -1,8 +1,8 @@
 class Bottles
-  def verse(verse_number)
+  def verse(count)
     <<~VERSE
-      #{number_bottle_string(verse_number)} of beer on the wall, #{number_bottle_string(verse_number)} of beer.
-      Take one down and pass it around, #{number_bottle_string(verse_number - 1)} of beer on the wall.
+      #{number_bottle_string(count)} of beer on the wall, #{number_bottle_string(count)} of beer.
+      Take one down and pass it around, #{number_bottle_string(count - 1)} of beer on the wall.
     VERSE
   end
 
