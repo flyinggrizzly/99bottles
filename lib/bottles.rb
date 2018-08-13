@@ -1,3 +1,3 @@
 class Bottles
-  def verse; end
+  def verse(number_of_verses); end
 end
