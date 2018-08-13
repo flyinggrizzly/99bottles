@@ -8,7 +8,7 @@ class Bottles
     VERSE
   end
 
-  def verses; end
+  def verses(*counts); end
 
   private
 
