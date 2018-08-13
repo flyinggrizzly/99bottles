@@ -11,6 +11,8 @@ class Bottles
   def bottles_for(number)
     if number == 1
       '1 bottle'
+    elsif number.zero?
+      'no more bottles'
     else
       "#{number} bottles"
     end
