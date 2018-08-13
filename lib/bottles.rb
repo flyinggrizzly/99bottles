@@ -8,7 +8,13 @@ class Bottles
     VERSE
   end
 
-  def verses(*counts); end
+  def verses(*counts)
+    requested_verses = counts.collect do |count|
+      verse(count)
+    end
+
+    requested_verses.join("\n")
+  end
 
   private
 
