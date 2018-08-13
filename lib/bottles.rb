@@ -1,6 +1,6 @@
 class Bottles
   def verse(count)
-    @bottle_number = count
+    @bottles_on_wall = count
 
     <<~VERSE
       #{bottles_for(count)} of beer on the wall, #{bottles_for(count)} of beer.
@@ -21,7 +21,7 @@ class Bottles
   end
 
   def bottle_article
-    if @bottle_number == 1
+    if @bottles_on_wall == 1
       'it'
     else
       'one'
