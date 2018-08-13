@@ -1,5 +1,7 @@
 class Bottles
   def verse(count)
+    @bottle_number = count
+
     <<~VERSE
       #{bottles_for(count)} of beer on the wall, #{bottles_for(count)} of beer.
       Take one down and pass it around, #{bottles_for(count - 1)} of beer on the wall.
