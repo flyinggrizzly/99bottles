@@ -8,6 +8,8 @@ class Bottles
     VERSE
   end
 
+  def verses; end
+
   private
 
   def line_one
