@@ -3,12 +3,32 @@ class Bottles
     @bottles_on_wall = count
 
     <<~VERSE
-      #{bottles_for(count)} of beer on the wall, #{bottles_for(count)} of beer.
-      Take #{bottle_article} down and pass it around, #{bottles_for(count - 1)} of beer on the wall.
+      #{line_one}
+      #{line_two}
     VERSE
   end
 
   private
+
+  def line_one
+    count = @bottles_on_wall
+
+    if any_bottles_on_wall?
+      "#{bottles_for(count)} of beer on the wall, #{bottles_for(count)} of beer."
+    else
+      "No more bottles of beer on the wall, no more bottles of beer."
+    end
+  end
+
+  def line_two
+    count = @bottles_on_wall - 1 # drank it y'all
+
+    if any_bottles_on_wall?
+      "Take #{bottle_article} down and pass it around, #{bottles_for(count)} of beer on the wall."
+    else
+      'Go to the store and buy some more, 99 bottles of beer on the wall.'
+    end
+  end
 
   def bottles_for(number)
     if number == 1
@@ -26,5 +46,9 @@ class Bottles
     else
       'one'
     end
+  end
+
+  def any_bottles_on_wall?
+    @bottles_on_wall.positive?
   end
 end
