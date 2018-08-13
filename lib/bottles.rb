@@ -6,6 +6,8 @@ class Bottles
     VERSE
   end
 
+  private
+
   def bottles_for(number)
     if number == 1
       '1 bottle'
