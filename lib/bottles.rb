@@ -4,7 +4,7 @@ class Bottles
 
     <<~VERSE
       #{bottles_for(count)} of beer on the wall, #{bottles_for(count)} of beer.
-      Take one down and pass it around, #{bottles_for(count - 1)} of beer on the wall.
+      Take #{bottle_article} down and pass it around, #{bottles_for(count - 1)} of beer on the wall.
     VERSE
   end
 
@@ -17,6 +17,14 @@ class Bottles
       'no more bottles'
     else
       "#{number} bottles"
+    end
+  end
+
+  def bottle_article
+    if @bottle_number == 1
+      'it'
+    else
+      'one'
     end
   end
 end
