@@ -32,5 +32,7 @@ class Bottles
       .collect { |number| verse(number) }.join("\n")
   end
 
-  def song; end
+  def song
+    verses(99, 0)
+  end
 end
