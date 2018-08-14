@@ -26,5 +26,5 @@ class Bottles
     end
   end
 
-  def verses; end
+  def verses(_, _); end
 end
