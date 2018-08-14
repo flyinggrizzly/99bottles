@@ -25,4 +25,6 @@ class Bottles
       VERSE
     end
   end
+
+  def verses; end
 end
