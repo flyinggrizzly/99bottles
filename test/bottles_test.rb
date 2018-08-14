@@ -26,4 +26,12 @@ class BottlesTest < Minitest::Test
     VERSE
     assert_equal expected, ::Bottles.new.verse(2)
   end
+
+  def test_verse_1
+    expected = <<~VERSE
+      1 bottles of beer on the wall, 1 bottles of beer.
+      Take it down and pass it around, no more bottles of beer on the wall.
+    VERSE
+    assert_equal expected, ::Bottles.new.verse(1)
+  end
 end
