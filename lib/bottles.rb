@@ -10,7 +10,7 @@ class Bottles
       VERSE
     when 1
       <<~VERSE
-        1 bottles of beer on the wall, 1 bottles of beer.
+        1 bottle of beer on the wall, 1 bottle of beer.
         Take it down and pass it around, no more bottles of beer on the wall.
       VERSE
     when 0
