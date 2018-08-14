@@ -21,11 +21,7 @@ class Bottles
   def line_one
     count = @bottles_on_wall
 
-    if any_bottles_on_wall?
-      "#{bottles_for(count)} of beer on the wall, #{bottles_for(count)} of beer."
-    else
-      "No more bottles of beer on the wall, no more bottles of beer."
-    end
+    "#{bottles_for(count, capital: true)} of beer on the wall, #{bottles_for(count)} of beer."
   end
 
   def line_two
@@ -38,11 +34,11 @@ class Bottles
     end
   end
 
-  def bottles_for(number)
+  def bottles_for(number, capital: false)
     if number == 1
       '1 bottle'
     elsif number.zero?
-      'no more bottles'
+      capital ? 'No more bottles' : 'no more bottles'
     else
       "#{number} bottles"
     end
