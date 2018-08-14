@@ -1,23 +1,8 @@
 # 99 Bottles
 
-## Installing Ruby
+Working through [_99 Bottles of OOP_](https://www.sandimetz.com/99bottles)
 
-### Windows
-
-There's an installer, it's easy.
-http://rubyinstaller.org/
-
-### Mac
-
-Newer macs ship with a usable version of Ruby.
-
-Try `ruby -v` in a terminal window, and if it's 1.9.x or 2.x you're fine.
-
-http://www.railstutorial.org/book/beginning#sec-install_ruby
-http://tutorials.jumpstartlab.com/topics/environment/environment.html
-http://docs.railsbridge.org/installfest/macintosh
-
-### Linux
-
-Ubuntu: http://docs.railsbridge.org/installfest/linux
-https://www.ruby-lang.org/en/installation/
+PRs are open (and won't be closed) for each[^1] chapter, so I/you can step
+through the changes commit by commit. I've tried to make the commit messages
+work like thought processes in the moment, but sometimes it's just a bare
+description.
