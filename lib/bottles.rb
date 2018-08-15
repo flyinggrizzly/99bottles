@@ -38,7 +38,7 @@ class Bottles
 
   private
 
-  def container
+  def container(number = :FIXME)
     'bottles'
   end
 end
