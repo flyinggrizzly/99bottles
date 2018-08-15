@@ -35,4 +35,9 @@ class Bottles
       VERSE
     end
   end
+
+  private
+
+  def container
+  end
 end
