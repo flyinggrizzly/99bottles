@@ -15,8 +15,8 @@ class Bottles
     case number
     when 2
       <<~VERSE
-        2 bottles of beer on the wall, 2 bottles of beer.
-        Take one down and pass it around, 1 bottle of beer on the wall.
+        #{number} bottles of beer on the wall, #{number} bottles of beer.
+        Take one down and pass it around, #{reduced_number} bottle of beer on the wall.
       VERSE
     when 1
       <<~VERSE
