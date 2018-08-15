@@ -15,7 +15,7 @@ class Bottles
     case number
     when 1
       <<~VERSE
-        #{number} bottle of beer on the wall, #{number} bottle of beer.
+        #{number} #{container(number)} of beer on the wall, #{number} #{container(number)} of beer.
         Take it down and pass it around, no more bottles of beer on the wall.
       VERSE
     when 0
