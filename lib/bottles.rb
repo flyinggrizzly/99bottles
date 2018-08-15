@@ -13,11 +13,6 @@ class Bottles
     reduced_number = number - 1
 
     case number
-    when 2
-      <<~VERSE
-        2 bottles of beer on the wall, 2 bottles of beer.
-        Take one down and pass it around, 1 bottle of beer on the wall.
-      VERSE
     when 1
       <<~VERSE
         1 bottle of beer on the wall, 1 bottle of beer.
@@ -30,9 +25,19 @@ class Bottles
       VERSE
     else
       <<~VERSE
-        #{number} bottles of beer on the wall, #{number} bottles of beer.
-        Take one down and pass it around, #{reduced_number} bottles of beer on the wall.
+        #{number} #{container(number)} of beer on the wall, #{number} #{container(number)} of beer.
+        Take one down and pass it around, #{reduced_number} #{container(reduced_number)} of beer on the wall.
       VERSE
+    end
+  end
+
+  private
+
+  def container(number)
+    if number == 1
+      'bottle'
+    else
+      'bottles'
     end
   end
 end
