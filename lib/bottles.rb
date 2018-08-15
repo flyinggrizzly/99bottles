@@ -10,8 +10,6 @@ class Bottles
   end
 
   def verse(number)
-    reduced_number = number - 1
-
     case number
     when 1
       <<~VERSE
@@ -26,7 +24,7 @@ class Bottles
     else
       <<~VERSE
         #{number} #{container(number)} of beer on the wall, #{number} #{container(number)} of beer.
-        Take #{pronoun(number)} down and pass it around, #{reduced_number} #{container(reduced_number)} of beer on the wall.
+        Take #{pronoun(number)} down and pass it around, #{number - 1} #{container(number - 1)} of beer on the wall.
       VERSE
     end
   end
