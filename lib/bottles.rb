@@ -13,11 +13,6 @@ class Bottles
     reduced_number = number - 1
 
     case number
-    when 2
-      <<~VERSE
-        #{number} #{container(number)} of beer on the wall, #{number} #{container(number)} of beer.
-        Take one down and pass it around, #{reduced_number} #{container(reduced_number)} of beer on the wall.
-      VERSE
     when 1
       <<~VERSE
         1 bottle of beer on the wall, 1 bottle of beer.
