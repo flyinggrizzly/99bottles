@@ -11,11 +11,6 @@ class Bottles
 
   def verse(number)
     case number
-    when 1
-      <<~VERSE
-        #{quantity(number)} #{container(number)} of beer on the wall, #{quantity(number)} #{container(number)} of beer.
-        Take #{pronoun(number)} down and pass it around, #{quantity(number - 1)} bottles of beer on the wall.
-      VERSE
     when 0
       <<~VERSE
         No more bottles of beer on the wall, no more bottles of beer.
