@@ -26,7 +26,7 @@ class Bottles
     else
       <<~VERSE
         #{number} #{container(number)} of beer on the wall, #{number} #{container(number)} of beer.
-        Take #{pronoun} down and pass it around, #{reduced_number} #{container(reduced_number)} of beer on the wall.
+        Take #{pronoun(number)} down and pass it around, #{reduced_number} #{container(reduced_number)} of beer on the wall.
       VERSE
     end
   end
