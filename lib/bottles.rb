@@ -30,8 +30,8 @@ class Bottles
       VERSE
     else
       <<~VERSE
-        #{number} bottles of beer on the wall, #{number} bottles of beer.
-        Take one down and pass it around, #{reduced_number} bottles of beer on the wall.
+        #{number} #{container} of beer on the wall, #{number} #{container} of beer.
+        Take one down and pass it around, #{reduced_number} #{container} of beer on the wall.
       VERSE
     end
   end
@@ -39,5 +39,6 @@ class Bottles
   private
 
   def container
+    'bottles'
   end
 end
