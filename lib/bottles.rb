@@ -13,7 +13,7 @@ class Bottles
     case number
     when 1
       <<~VERSE
-        #{number} #{container(number)} of beer on the wall, #{number} #{container(number)} of beer.
+        #{quantity(number)} #{container(number)} of beer on the wall, #{quantity(number)} #{container(number)} of beer.
         Take #{pronoun(number)} down and pass it around, #{quantity(number - 1)} bottles of beer on the wall.
       VERSE
     when 0
