@@ -30,8 +30,8 @@ class Bottles
       VERSE
     else
       <<~VERSE
-        #{number} #{container} of beer on the wall, #{number} #{container} of beer.
-        Take one down and pass it around, #{reduced_number} #{container} of beer on the wall.
+        #{number} #{container(number)} of beer on the wall, #{number} #{container(number)} of beer.
+        Take one down and pass it around, #{reduced_number} #{container(reduced_number)} of beer on the wall.
       VERSE
     end
   end
