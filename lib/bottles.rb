@@ -19,7 +19,7 @@ class Bottles
   private
 
   def container(number)
-    BottleNumber.new(number).container(number)
+    BottleNumber.new(number).container
   end
 
   def pronoun(number)
