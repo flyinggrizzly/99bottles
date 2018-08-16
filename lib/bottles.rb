@@ -14,12 +14,12 @@ class Bottles
     when 0
       "#{quantity(number).capitalize} #{container(number)} of beer on the wall, " +
         "#{quantity(number)} #{container(number)} of beer.\n" +
-        "Go to the store and buy some more, " +
+        action_for(number) +
         "99 bottles of beer on the wall.\n"
     else
       "#{quantity(number).capitalize} #{container(number)} of beer on the wall, " +
         "#{quantity(number)} #{container(number)} of beer.\n" +
-        "Take #{pronoun(number)} down and pass it around, " +
+        action_for(number) +
         "#{quantity(number - 1)} #{container(number - 1)} of beer on the wall.\n"
     end
   end
@@ -47,6 +47,14 @@ class Bottles
       'no more'
     else
       number.to_s
+    end
+  end
+
+  def action_for(number)
+    if number.zero?
+      "Go to the store and buy some more, "
+    else
+      "Take #{pronoun(number)} down and pass it around, "
     end
   end
 end
