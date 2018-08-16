@@ -18,24 +18,6 @@ class Bottles
       bottle_number.action +
       "#{next_bottle_number.quantity} #{next_bottle_number.container} of beer on the wall.\n"
   end
-
-  private
-
-  def container(number)
-    BottleNumber.new(number).container
-  end
-
-  def quantity(number)
-    BottleNumber.new(number).quantity
-  end
-
-  def action_for(number)
-    BottleNumber.new(number).action
-  end
-
-  def successor(number)
-    BottleNumber.new(number).successor
-  end
 end
 
 class BottleNumber
