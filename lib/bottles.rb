@@ -31,7 +31,7 @@ class Bottles
   end
 
   def action_for(number)
-    BottleNumber.new(number).action_for(number)
+    BottleNumber.new(number).action
   end
 
   def successor(number)
@@ -70,7 +70,7 @@ class BottleNumber
     end
   end
 
-  def action_for(number)
+  def action
     if number.zero?
       "Go to the store and buy some more, "
     else
