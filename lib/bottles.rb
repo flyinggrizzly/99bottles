@@ -15,7 +15,7 @@ class Bottles
       "#{quantity(number).capitalize} #{container(number)} of beer on the wall, " +
         "#{quantity(number)} #{container(number)} of beer.\n" +
         action_for(number) +
-        "#{quantity(99)} #{container(number - 1)} of beer on the wall.\n"
+        "#{quantity(successor(number))} #{container(successor(number))} of beer on the wall.\n"
     else
       "#{quantity(number).capitalize} #{container(number)} of beer on the wall, " +
         "#{quantity(number)} #{container(number)} of beer.\n" +
