@@ -22,10 +22,6 @@ class Bottles
     BottleNumber.new(number).container
   end
 
-  def pronoun(number)
-    BottleNumber.new(number).pronoun(number)
-  end
-
   def quantity(number)
     BottleNumber.new(number).quantity
   end
