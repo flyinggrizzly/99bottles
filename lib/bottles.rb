@@ -35,7 +35,7 @@ class Bottles
   end
 
   def successor(number)
-    BottleNumber.new(number).successor(number)
+    BottleNumber.new(number).successor
   end
 end
 
@@ -78,7 +78,7 @@ class BottleNumber
     end
   end
 
-  def successor(number)
+  def successor
     if number.zero?
       99
     else
