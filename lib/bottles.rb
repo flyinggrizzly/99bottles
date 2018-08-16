@@ -46,7 +46,7 @@ class BottleNumber
     @number = number
   end
 
-  def container(dont_care = nil)
+  def container
     if number == 1
       'bottle'
     else
