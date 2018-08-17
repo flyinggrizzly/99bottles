@@ -22,6 +22,14 @@ class Bottles
   private
 
   def bottle_number_for(number)
+    BottleNumber.for(number)
+  end
+end
+
+class BottleNumber
+  attr_reader :number
+
+  def self.for(number)
     case number
     when 0
       BottleNumber0
@@ -32,10 +40,6 @@ class Bottles
     end
       .new(number)
   end
-end
-
-class BottleNumber
-  attr_reader :number
 
   def initialize(number)
     @number = number
