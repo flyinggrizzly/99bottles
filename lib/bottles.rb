@@ -22,7 +22,11 @@ class Bottles
   private
 
   def bottle_number_for(number)
-    BottleNumber.new(number)
+    if number.zero?
+      BottleNumber0.new(number)
+    else
+      BottleNumber.new(number)
+    end
   end
 end
 
