@@ -27,6 +27,10 @@ class BottleNumber
     @number = number
   end
 
+  def to_s
+    "#{quantity} #{container}"
+  end
+
   def container
     if number == 1
       'bottle'
